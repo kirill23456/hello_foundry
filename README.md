@@ -1,66 +1,24 @@
-## Foundry
+ MyToken - Foundry ERC20 Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Этот проект представляет собой реализацию и деплой смарт-контракта ERC20 с использованием фреймворка **Foundry**. Создано в рамках изучения аудита смарт-контрактов.
 
-Foundry consists of:
+ 🛠 Технологии
+* **Solidity**: ^0.8.0
+* **Foundry**: Forge & Cast
+* **Library**: Solmate (оптимизированные контракты)
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🚀 Деплой
+Контракт был успешно развернут в тестовой сети **Sepolia**.
 
-## Documentation
+**Параметры деплоя:**
+- **Network**: Sepolia
+- **Contract Address**: 0x6A641aC7712471ad7760b615348e6797e31A9f53
+- **Explorer**: [Etherscan Sepolia](https://sepolia.etherscan.io/)
 
-https://book.getfoundry.sh/
+## 🔍 Безопасность и Аудит
+Проект ориентирован на изучение безопасности блокчейна. В дальнейшем планируется добавление тестов на классические уязвимости (Reentrancy, Integer Overflow в старых версиях, Delegatecall exploits).
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## 📈 Как запустить локально
+1. Установить зависимости:
+   ```shell
+   forge install
